@@ -8,7 +8,7 @@ function welcomeMessage() {
         userName = "Guest";
     }
 
-    document.getElementById("welcome").innerText = "Welcome, " + userName + "!";
+    document.getElementById("Hallo").innerText = "Hallo, " + userName + "!";
 }
 
 function validateForm() {
