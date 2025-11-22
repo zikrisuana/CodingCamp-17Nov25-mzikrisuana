@@ -3,18 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Company </title>
 
+    <!--- CSS External --->
     <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     
-    <header></header>
+    <!-- Header content-->
+    <header class="main-header p-[8px]">
+        <!--Logo Icon -->
+        <div class="logo-icon"></div>
+        <!--Navigation Bar-->
+        <nav class="flex">
+                <a class="border p-{4px} rounded" href="#">Home</a>
+                <a class="border p-{4px} rounded" href="#">Our Profile</a>
+                <a class="border p-{4px} rounded" href="#">Portofolio</a>
+                <a class="border p-{4px} rounded" href="#">Massage Us</a>
+        </nav>
+    </header>
 
-    <main></main>
+    <hr/>
 
-    <footer></footer>
+    <!-- Main content-->
+    <main>
+        <section id="home" class="home-section">
+    <div class="home-content">
+        <h1>Welcome to Our Website</h1>
+        <p>
+            Kami menyediakan layanan profesional dengan kualitas terbaik.
+            Jelajahi profil kami, lihat portofolio, dan kirim pesan melalui form yang tersedia.
+        </p>
+        <a href="#portofolio" class="home-btn">Explore Now</a>
+    </div>
+</section>
 
+    </main>
+    
+    <hr/>
+    <section id="profile" class="profile-section">
+    <div class="profile-container">
+        <h2>Our Profile</h2>
+
+        <p class="profile-desc">
+            Kami adalah tim profesional yang berfokus pada pengembangan solusi digital
+            melalui desain modern, teknologi terbaru, dan pendekatan yang berorientasi
+            pada kualitas. Setiap proyek kami kerjakan dengan detail, kreativitas,
+            dan komitmen terhadap hasil terbaik.
+        </p>
+
+        <div class="profile-grid">
+            <div class="profile-card">
+                <h3>Visi</h3>
+                <p>
+                    Menjadi penyedia layanan teknologi yang inovatif dan dipercaya
+                    untuk mendukung transformasi digital.
+                </p>
+            </div>
+
+            <div class="profile-card">
+                <h3>Misi</h3>
+                <p>
+                    Memberikan solusi yang efektif, estetis, dan mudah digunakan
+                    melalui kombinasi kreativitas dan teknologi.
+                </p>
+            </div>
+
+            <div class="profile-card">
+                <h3>Nilai Utama</h3>
+                <p>
+                    Integritas, profesionalisme, dan komitmen terhadap kualitas
+                    menjadi pondasi utama kerja kami.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <hr/>
+
+    <section id="message" class="message-section">
+    <div class="message-container">
+        <h2>Message Us</h2>
+        <p class="message-desc">
+            Kirimkan pesan, pertanyaan, atau kebutuhan proyek Anda melalui form di bawah ini. 
+            Kami akan segera menghubungi Anda kembali.
+        </p>
+
+        <form class="message-form">
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Masukkan email aktif" required>
+            </div>
+
+            <div class="form-group">
+                <label for="messageInput">Pesan</label>
+                <textarea id="messageInput" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">Kirim Pesan</button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Footer content-->
+    <footer>
+        <span>@2025 Our Company</span>
+    </footer>
+
+    <!---JavaScript External--->
     <script src="js/script.js"></script>
 </body>
 </html>
